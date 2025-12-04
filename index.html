@@ -19,7 +19,13 @@
     header{display:flex;align-items:center;gap:16px}
     .logo{width:68px;height:68px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center}
     .logo img{width:100%;height:100%;object-fit:contain}
-    h1{font-size:20px;margin:0}
+    /* 調整 h1 樣式以適應國旗 */
+    h1{font-size:20px;margin:0;display:flex;align-items:center;} 
+    h1 .flag{
+      margin-right: 8px;
+      font-size: 24px; /* 國旗字體加大，確保可見 */
+    } 
+
     p.lead{margin:6px 0 18px;color:#4a4a4a}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
     .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(10,10,10,0.06);border:1px solid rgba(0,0,0,0.04)}
@@ -98,15 +104,27 @@
     <header>
       <div class="logo"><img src="2acoupleV3.png" alt="2A夫妻 Logo"></div>
       <div>
-        <h1>【大阪、京都】熱門景點連結彙整</h1>
+        <h1><span class="flag">🇯🇵</span>【大阪、京都】熱門景點連結彙整</h1>
         <p class="lead">精選KKday／Klook／Agoda【大阪、京都】景點門票、eSIM、SIM卡、WiFi、交通卡、機場接送、住宿</p>
       </div>
     </header>
 
     <main class="grid">
-      
+
+      <section class="card agoda">
+        <h2>🌟【Agoda大阪、京都住宿】</h2>
+        <div class="links">
+          <a class="link" href="https://agoda.tpx.gr/TNL6z7QC" target="_blank" rel="noopener">大阪：APA HOTEL＆RESORT OSAKA NAMBA EKIMAE TOWER</a>
+          <a class="link" href="https://agoda.tpx.gr/xdtEXhe9" target="_blank" rel="noopener">大阪：大阪洲際酒店</a>
+          <a class="link" href="https://agoda.tpx.gr/tHXo74OC" target="_blank" rel="noopener">大阪：阪急大阪龍仕柏飯店</a>
+          <a class="link" href="https://agoda.tpx.gr/4L3lqmVD" target="_blank" rel="noopener">京都：京都第一飯店-京都站八條口</a>
+          <a class="link" href="https://agoda.tpx.gr/HhyyqIUF" target="_blank" rel="noopener">京都：京都梅小路皇家花園飯店</a>
+          <a class="link" href="https://agoda.tpx.gr/sTCnbFfO" target="_blank" rel="noopener">京都：相鐵FRESA INN京都站八條口</a>
+        </div>
+      </section>
+
       <section class="card kkday">
-        <h2>🌟【Kkday日本網路/優惠券】</h2>
+        <h2>🌟【Kkday日本網路／優惠券】</h2>
         <div class="links">
           <a class="link" href="https://reurl.cc/R9qO4D" target="_blank" rel="noopener">日本eSIM</a>
           <a class="link" href="https://reurl.cc/jmWR71" target="_blank" rel="noopener">日本SIM卡</a>
@@ -123,7 +141,7 @@
           <a class="link" href="https://reurl.cc/GGjXmv" target="_blank" rel="noopener">南海電鐵Rapi:t 車票</a>
           <a class="link" href="https://reurl.cc/2lY8z6" target="_blank" rel="noopener">利木津巴士</a>
           <a class="link" href="https://reurl.cc/qKVZZn" target="_blank" rel="noopener">關西機場機場接送</a>
-          <a class="link" href="https://reurl.cc/5bv8pn" target="_blank" rel="noopener">大阪・京都旅館 / 行李配送</a>
+          <a class="link" href="https://reurl.cc/5bv8pn" target="_blank" rel="noopener">大阪・京都旅館 ／ 行李配送</a>
           <a class="link" href="https://reurl.cc/1kv0bV" target="_blank" rel="noopener">客制化多日包車</a>
           <a class="link" href="https://reurl.cc/qKVZLy" target="_blank" rel="noopener">大阪地鐵一日券／二日券</a>
           <a class="link" href="https://reurl.cc/gnGQaN" target="_blank" rel="noopener">京阪電車一日券</a>
@@ -184,7 +202,7 @@
       </section>
 
       <section class="card kkday">
-        <h2>🌟【Kkday大阪、京都景點/門票】</h2>
+        <h2>🌟【Kkday大阪、京都景點／門票】</h2>
         <div class="links">
           <a class="link" href="https://reurl.cc/gnGQ0b" target="_blank" rel="noopener">大阪環球影城</a>
           <a class="link" href="https://reurl.cc/MMOX04" target="_blank" rel="noopener">大阪環球影城快速通關</a>
@@ -209,7 +227,7 @@
       </section>
       
       <section class="card klook">
-        <h2>🌍【Klook大阪、京景點/門票】</h2>
+        <h2>🌍【Klook大阪、京景點／門票】</h2>
         <div class="links">
           <a class="link" href="https://reurl.cc/QVRXzq" target="_blank" rel="noopener">大阪環球影城門票</a>
           <a class="link" href="https://reurl.cc/W8xGjZ" target="_blank" rel="noopener">大阪環球影城快速通關</a>
@@ -257,18 +275,6 @@
         </div>
       </section>
 
-      <section class="card agoda">
-        <h2>🌟【Agoda大阪、京都住宿】</h2>
-        <div class="links">
-          <a class="link" href="https://agoda.tpx.gr/TNL6z7QC" target="_blank" rel="noopener">大阪：APA HOTEL＆RESORT OSAKA NAMBA EKIMAE TOWER</a>
-          <a class="link" href="https://agoda.tpx.gr/xdtEXhe9" target="_blank" rel="noopener">大阪：大阪洲際酒店</a>
-          <a class="link" href="https://agoda.tpx.gr/tHXo74OC" target="_blank" rel="noopener">大阪：阪急大阪龍仕柏飯店</a>
-          <a class="link" href="https://agoda.tpx.gr/4L3lqmVD" target="_blank" rel="noopener">京都：京都第一飯店-京都站八條口</a>
-          <a class="link" href="https://agoda.tpx.gr/HhyyqIUF" target="_blank" rel="noopener">京都：京都梅小路皇家花園飯店</a>
-          <a class="link" href="https://agoda.tpx.gr/sTCnbFfO" target="_blank" rel="noopener">京都：相鐵FRESA INN京都站八條口</a>
-        </div>
-      </section>
-      
     </main>
 
     <footer>
