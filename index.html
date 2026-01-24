@@ -6,14 +6,14 @@
   <title>【大阪、京都】熱門景點連結彙整 — 2A夫妻</title>
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <style>
-    :root{
-      --bg:#daccc0;
-      --card:#fff;
-      --accent:#2a6f97;
-      --kkday:#8E9BAE;
-      --klook:#A9B7AA;
-      --agoda:#a68a64; /* Agoda 新色 */
-    }
+:root{
+  --bg:#f3efe9;          /* 紙感米色 */
+  --card:#ffffff;
+  --accent:#2f5d62;      /* 深墨綠藍 */
+  --kkday:#9aa6b2;       /* 霧藍灰 */
+  --klook:#a8b8a5;       /* 鼠尾草綠 */
+  --agoda:#b39a78;       /* 香檳棕 */
+}
     html,body{height:100%;margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--accent)}
     .wrap{max-width:980px;margin:32px auto;padding:28px}
     header{display:flex;align-items:center;gap:16px}
@@ -97,98 +97,6 @@
     .small{font-size:12px;color:#666;margin-top:10px}
     footer{margin-top:18px;font-size:13px;color:#555}
     @media (max-width:420px){.wrap{padding:16px}}
-	/* =========================
-   手機版質感優化
-   ========================= */
-@media (max-width: 480px) {
-
-  /* 整體間距 */
-  .wrap {
-    margin: 16px auto;
-    padding: 16px 14px 24px;
-  }
-
-  /* Header 改直式 */
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 12px;
-  }
-
-  .logo {
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
-  }
-
-  h1 {
-    font-size: 18px;
-    line-height: 1.4;
-  }
-
-  p.lead {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-  }
-
-  /* Grid 強制單欄，拉開節奏 */
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  /* 卡片質感 */
-  .card {
-    padding: 16px;
-    border-radius: 18px;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-  }
-
-  /* 卡片標題：改成標籤感 */
-  .card h2 {
-    display: inline-block;
-    font-size: 15px;
-    padding: 6px 12px;
-    border-radius: 999px;
-    margin-bottom: 14px;
-    line-height: 1.4;
-  }
-
-  /* 連結區塊拉開 */
-  .links {
-    gap: 12px;
-  }
-
-  /* 連結按鈕：手機友善 */
-  a.link {
-    width: 100%;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 15px;
-    border-radius: 14px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-    transform: none;
-  }
-
-  a.link:active {
-    transform: scale(0.97);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  /* Footer */
-  footer {
-    margin-top: 24px;
-    text-align: center;
-  }
-
-  .small {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-}
-
   </style>
 </head>
 <body>
