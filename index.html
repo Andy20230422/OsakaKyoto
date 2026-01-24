@@ -6,15 +6,14 @@
   <title>【大阪、京都】熱門景點連結彙整 — 2A夫妻</title>
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <style>
-:root{
-  --bg:#f3efe9;          /* 紙感米色 */
-  --card:#ffffff;
-  --accent:#2f5d62;      /* 深墨綠藍 */
-  --kkday:#9aa6b2;       /* 霧藍灰 */
-  --klook:#a8b8a5;       /* 鼠尾草綠 */
-  --agoda:#b39a78;       /* 香檳棕 */
-}
-
+    :root{
+      --bg:#daccc0;
+      --card:#fff;
+      --accent:#2a6f97;
+      --kkday:#8E9BAE;
+      --klook:#A9B7AA;
+      --agoda:#a68a64; /* Agoda 新色 */
+    }
     html,body{height:100%;margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,"Noto Sans CJK TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--accent)}
     .wrap{max-width:980px;margin:32px auto;padding:28px}
     header{display:flex;align-items:center;gap:16px}
@@ -187,99 +186,6 @@
   .small {
     font-size: 12px;
     line-height: 1.5;
-  }
-}
-@media (max-width: 480px) {
-
-  body {
-    background: linear-gradient(
-      180deg,
-      #f6f2ec 0%,
-      #efe9e1 100%
-    );
-  }
-
-  .wrap {
-    padding: 18px 14px 28px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .logo {
-    width: 54px;
-    height: 54px;
-    border-radius: 16px;
-    background: #fff;
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
-  }
-
-  h1 {
-    font-size: 17px;
-    line-height: 1.45;
-    letter-spacing: .3px;
-  }
-
-  p.lead {
-    font-size: 13.5px;
-    line-height: 1.7;
-    color: #5a5a5a;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .card {
-    border-radius: 20px;
-    padding: 18px 16px 20px;
-    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
-    border: none;
-  }
-
-  /* 標題變成細緻標籤 */
-  .card h2 {
-    font-size: 14px;
-    font-weight: 600;
-    padding: 6px 14px;
-    border-radius: 999px;
-    letter-spacing: .4px;
-  }
-
-  .links {
-    gap: 14px;
-  }
-
-  /* 霧面按鈕 */
-  a.link {
-    background: rgba(0,0,0,0.03);
-    color: var(--accent);
-    font-size: 15px;
-    padding: 14px 16px;
-    border-radius: 16px;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,.06);
-    font-weight: 600;
-  }
-
-  /* 不同平台只用「文字色」區分，視覺更乾淨 */
-  .card.kkday a.link { color: var(--kkday); }
-  .card.klook a.link { color: var(--klook); }
-  .card.agoda a.link { color: var(--agoda); }
-
-  a.link:hover,
-  a.link:active {
-    background: rgba(0,0,0,0.06);
-    transform: none;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
-  }
-
-  footer {
-    margin-top: 28px;
-    text-align: center;
   }
 }
 
